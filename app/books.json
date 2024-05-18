@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Treinamento - Splunk Básico",
+        "author": "Kelvem Sousa",
+        "description": "Este curso prático tem como foco apresentar a ferramenta Splunk e ensinar os conceitos básicos necessários para aproveitar ao máximo suas funcionalidades poderosas na análise de dados voltado para segurança da informação.",
+        "cover_image": "static/images/book1.jpg",
+	"link": "https://www.youtube.com/watch?v=oKZ3_e-9Q7I&list=PL8vOoYAs_ySxS_b0mFeSbPe8q-VDyX55w"
+    },
+    {
+        "title": "Video - SQL Injection (Ataque, monitoração e prevenção)",
+        "author": "Kelvem Sousa",
+        "description": "O vídeo aborda uma das vulnerabilidades mais comuns em aplicações web: a injeção de SQL. Nele, você irá aprender o que é uma injeção de SQL, como ela pode ser explorada por um invasor, como detectar e monitorar esse tipo de ataque e, principalmente, como se prevenir contra ele. Serão apresentados exemplos práticos de como realizar uma injeção de SQL e como evitá-la, tornando seu sistema mais seguro.",
+        "cover_image": "static/images/book2.jpg",
+	"link": "https://www.youtube.com/watch?v=9e3ZpLR1wXU"
+    },
+    {
+        "title": "Artigo - Detecção de port forwarding SSH",
+        "author": "Kelvem Sousa",
+        "description": "O encaminhamento de portas SSH (MITRE ATT&CK - Remote Services: SSH) é uma das principais técnicas utilizadas para movimentação lateral em hosts Linux, basicamente, você pode encaminhar qualquer porta TCP e tráfego através de uma conexão SSH segura.",
+        "cover_image": "static/images/book3.jpg",
+	"link": "https://www.linkedin.com/feed/update/urn:li:activity:6993271237946806272/"
+    }
+]

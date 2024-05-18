@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>SECDAY</title>
+    <style>
+        .card-body {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-4 bg-primary text-white p-3">
+            <img src="static/favicon.ico" alt="Icon" style="height: 1em; vertical-align: middle;"> SECDAY LIBRARY
+            <img src="static/favicon.ico" alt="Icon" style="height: 1em; vertical-align: middle;">
+        </h1>
+
+        <div class="row">
+            {% for book in books %}
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100">
+                    <img class="card-img-top" src="{{ book.cover_image }}" alt="{{ book.title }} Capa do Livro">
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h5 class="card-title">{{ book.title }}</h5>
+                            <p class="card-text">Autor: {{ book.author }}</p>
+                            <p class="card-text">{{ book.description }}</p>
+                        </div>
+                        <a href="{{ book.link }}" target="_blank" class="btn btn-primary w-100">Saber mais!</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="mt-4">
+            <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+        </div>
+    </div>
+</body>
+</html>
